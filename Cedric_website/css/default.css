@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+main, header, footer, nav, article { display: inline-block; }
+
+body {
+    width: 900px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h3 { margin: .5em 0 .2em; }
+p { margin: 0 .2em .7em 0; }
+
+div#logo { padding: 10px 0; }
+
+ul.nav > li {
+    list-style-type: none;
+    float: left;
+    width: 179px;
+    height: 25px;
+    border-right: 1px solid #FFF;
+    background-color: rgb(255, 187, 0);
+    text-align: center;
+}
+
+ul.nav > li:hover {
+    padding: 2px 1px;
+    background-color: rgb(255, 187, 0);
+    color: rgb(158, 158, 158);
+}
+
+ul.nav > li > a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .7em;
+}
+
+nav#subMenu ul li {
+    border-top: 1px solid #FFF;
+    background-color: rgb(255, 187, 0);
+}
+
+article#textLeft {
+float: left;
+width: 65%;
+}
+
+div#image {
+z-index: -99;
+float: left;
+width: 35%;
+margin-top: 20px;
+text-align: center;
+}
+
+article#textRight {
+    float: left;
+    width: 715px;
+    margin-left: 5px;
+}
+    article#siteMap ol,
+    article#siteMap ul {
+    margin: 0 30px 10px;
+}
+    
+    footer {
+    clear: left;
+    width: 100%;
+    height: 20px;
+}
+    div#copyright {
+    float: left;
+    width: 539px;
+    height: 25px;
+    line-height: 25px;
+    border-right: 1px solid #FFF;
+    background-color: rgb(255, 187, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: .9em;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.Links li {
+    float: left;
+    width: 153px;
+    border-right: 1px solid #FFF;
+    font-weight: bold;
+    font-size: .7em;
+    text-align: center;
+    list-style: none;
+    }
+    .Links li:last-child {
+    width: 132px;
+    border-right-width: 0;
+    }
+   
+    .Links li a {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    background-color: rgb(255, 187, 0);
+    color: #FFF;
+    text-decoration: none;
+    }
+    .Links li a:hover {
+    background-color: rgb(255, 187, 0);
+    color: #FFF;
+    }
+  
+    .Links div {
+    z-index: 99;
+    position: absolute;
+    background-color: rgb(255, 187, 0);
+    visibility: hidden;
+    }
+    .Links div a {
+    width: 124px;
+    margin-top: 2px;
+    padding-left: 3px;
+    background-color: rgb(255, 187, 0);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    }

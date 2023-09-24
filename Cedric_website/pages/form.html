@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../css/default.css">
+<!--#include virtual="../common/document_head.html"-->
+<script src="../scripts/feedbackformvalidate.js"></script>
+<script src="../scripts/menus.js"></script>
+<style>
+    h4 {text-align:center}
+</style>   
+</head>
+<body>
+    <header>
+        <!--#include virtual="../common/subpage_logorow.html"-->
+        <!--#include virtual="../common/subpage_mainmenu.html"-->
+        </header>
+        <main class="Feedback">
+            <h4>Your Order:</h4>
+            <form id="contactForm" onsubmit="feedbackFormValidate()">
+            <table>
+            <tr>
+            <td>Food:</td>
+            <td><select name="food">
+            <option>Croissant - $2</option>
+            <option>Egg Wrap - $4</option>
+            <option>Egg Muffin - $4</option>
+            <option>French Toast - $5</option>
+            <option>Pancakes - $5</option>
+            <option>Bacon and Eggs - $6</option>
+            </select>
+            </tr>
+            <tr>
+            <td>Beverage:</td>
+            <td><select name="beverage">
+            <option>Coffee - $3</option>
+            <option>Water - $0</option>
+            <option>Chai Tea - $3</option>
+            <option>Refresher - $2</option>
+            <option>Lemonade - $2</option>
+            <option>Cold Brew - $4</option>
+            </select></td>
+            </tr>
+            </table>
+            <table>
+            <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="firstName" size="40"></td>
+            </tr>
+            <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastName" size="40"></td>
+            </tr>
+            <tr>
+            <td>E-mail Address:</td>
+            <td><input type="text" name="email" size="40"></td>
+            </tr>
+            <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="phone" size="40"></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Complete Order"></td>
+            <td><input type="reset" value="Reset Form"></td>
+            </tr>
+            </table>
+        </form>
+    </main>
+<footer>
+    <!--#include virtual="../common/subpage_footerrow.html"-->
+</footer>
+</body>
+</html>
